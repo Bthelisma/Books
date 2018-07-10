@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Update Book</h1>
+    <p>Title: {{ session['title'] }}</p>
+    <p>Author: {{ session['author'] }}</p>
+    <form action='/edit/{{book_id}}' method='POST'>
+      <label for="title">Title:<input type="text" name="title" id="title"></label><br><br>
+      <label for="author">Author:<input type="text" name="author" id="author"></label><br><br>
+      <input type="submit" value="Update Book">
+    </form>
+
+
+  </body>
+</html>
